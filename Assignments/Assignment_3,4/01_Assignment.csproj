@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25A0927E-D137-4800-BED1-91D09ACFDCC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_01_Assignment</RootNamespace>
+    <AssemblyName>01_Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_Add_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Course.Designer.cs">
+      <DependentUpon>frm_Add_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Student .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Student .Designer.cs">
+      <DependentUpon>frm_Add_New_Student .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Course_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Course_List.Designer.cs">
+      <DependentUpon>frm_Course_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main_Form.Designer.cs">
+      <DependentUpon>frm_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Student.Designer.cs">
+      <DependentUpon>frm_Update_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_All_Student_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_All_Student_List.Designer.cs">
+      <DependentUpon>frm_View_All_Student_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_form.Designer.cs">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_Search_Student_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Student_Details.Designer.cs">
+      <DependentUpon>frm_Search_Student_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared_Conternt.cs" />
+    <Compile Include="_Assignment34_dboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Assignment34_dboDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Assignment34_dboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Assignment34_dboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_VRAssignment_dboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_VRAssignment_dboDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_VRAssignment_dboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_VRAssignment_dboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_VRAssignment_dboDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_VRAssignment_dboDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_VSRAssignment_dboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_VSRAssignment_dboDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Add_Course.resx">
+      <DependentUpon>frm_Add_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Student .resx">
+      <DependentUpon>frm_Add_New_Student .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Course_List.resx">
+      <DependentUpon>frm_Course_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main_Form.resx">
+      <DependentUpon>frm_Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Student.resx">
+      <DependentUpon>frm_Update_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_All_Student_List.resx">
+      <DependentUpon>frm_View_All_Student_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_form.resx">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Search_Student_Details.resx">
+      <DependentUpon>frm_Search_Student_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Assignment34_dboDataSet.xsc">
+      <DependentUpon>_Assignment34_dboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Assignment34_dboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Assignment34_dboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Assignment34_dboDataSet.xss">
+      <DependentUpon>_Assignment34_dboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Assignment34_dboDataSet1.xsc">
+      <DependentUpon>_Assignment34_dboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Assignment34_dboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Assignment34_dboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Assignment34_dboDataSet1.xss">
+      <DependentUpon>_Assignment34_dboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet.xsc">
+      <DependentUpon>_VRAssignment_dboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_VRAssignment_dboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_VRAssignment_dboDataSet.xss">
+      <DependentUpon>_VRAssignment_dboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet1.xsc">
+      <DependentUpon>_VRAssignment_dboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_VRAssignment_dboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_VRAssignment_dboDataSet1.xss">
+      <DependentUpon>_VRAssignment_dboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet2.xsc">
+      <DependentUpon>_VRAssignment_dboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_VRAssignment_dboDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_VRAssignment_dboDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_VRAssignment_dboDataSet2.xss">
+      <DependentUpon>_VRAssignment_dboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_VSRAssignment_dboDataSet.xsc">
+      <DependentUpon>_VSRAssignment_dboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_VSRAssignment_dboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_VSRAssignment_dboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_VSRAssignment_dboDataSet.xss">
+      <DependentUpon>_VSRAssignment_dboDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
